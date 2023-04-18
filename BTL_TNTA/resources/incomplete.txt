@@ -1,0 +1,160 @@
+The Earth is the third planet from the ___1___.It has a ___2___ shape and is mostly covered in ___3___. The planet is home to millions of ___4___ and plants, including humans. The Earth has one natural ___5___, which is the Moon.
+DE
+DANH_TU
+Câu 1: What is the missing word for blank 1?
+Moon
+Sun
+Mars
+Jupiter
+-
+B
+DANH_TU
+DE
+The Earth is the third planet from the Sun.
+-
+Câu 2:What is the missing word for blank 2?
+Flat
+Round
+Square
+Triangle
+-
+B
+DANH_TU
+DE
+The Earth has a round shape.
+-
+Câu 3: What is the missing word for blank 3?
+Water
+Trees
+Mountains
+Sand
+-
+A
+DANH_TU
+DE
+The Earth is mostly covered in water.
+-
+Câu 4: What is the missing word for blank 4?
+Animals
+Cars
+Computers
+Buildings
+-
+A
+DANH_TU
+DE
+The Earth is home to millions of animals and plants.
+-
+Câu 5: What is the missing word for blank 5?
+Planet
+Satellite
+Comet
+Star
+-
+B
+DANH_TU
+DE
+The Moon is the Earth's natural satellite
+In the human body, the heart is responsible for ___1___ blood throughout the body. It is located in the chest, just behind the ___2___ and between the lungs. The heart is a ___3___ organ that is divided into four chambers, which are the left and right atria and ventricles. Blood is pumped out of the heart through arteries and returns to the heart through veins. The ___4___ are responsible for carrying oxygenated blood from the heart to the body's tissues, while the veins return deoxygenated blood back to the heart. The heart is one of the most important organs in the body, as it ensures that all the body's cells receive the nutrients and oxygen they need to function properly.
+KHO
+DONG_TU
+Câu 1: What is the missing word for blank 1?
+Pumping
+Digesting
+Breathing
+-
+A
+DONG_TU
+KHO
+The heart is responsible for pumping blood throughout the body.
+-
+Câu 2: What is the missing word for blank 2?
+Stomach
+Lungs
+Liver
+-
+B
+DONG_TU
+KHO
+The heart is located in the chest, just behind the lungs.
+-
+Câu 3: What is the missing word for blank 3?
+Vital
+Useless
+Secondary
+-
+A
+DONG_TU
+KHO
+The heart is a vital organ that is divided into four chambers.
+-
+Câu 4: What is the missing word for blank 4?
+Arteries
+Veins
+Nerves
+-
+A
+DONG_TU
+KHO
+The arteries are responsible for carrying oxygenated blood from the heart to the body's tissues.
+-
+Câu 5: What is the missing word for blank 5?
+Lungs
+Brain
+Kidneys
+-
+C
+DONG_TU
+KHO
+The heart ensures that all the body's cells receive the nutrients and oxygen they need to function properly, including the kidneys.
+The respiratory system is responsible for ___1___ in the body. It includes the lungs, airways, and respiratory muscles. The primary function of the respiratory system is to ___2___ oxygen from the air and remove carbon dioxide from the body. The air enters the body through the ___3___ and travels down to the bronchioles and alveoli in the lungs, where gas exchange occurs. The respiratory muscles, including the diaphragm and intercostal muscles, help to move air in and out of the lungs. Respiratory diseases such as asthma, chronic obstructive pulmonary disease (COPD), and lung cancer can affect the functioning of the respiratory system and have serious consequences for overall health.
+TRUNG_BINH
+TINH_TU
+Câu 1: What is the missing word for blank 1?
+Breathing
+Digesting
+Pumping
+-
+A
+TINH_TU
+TRUNG_BINH
+The respiratory system is responsible for breathing in the body.
+-
+Câu 2: What is the missing word for blank 2?
+Extract
+Transport
+Exchange
+-
+C
+TINH_TU
+TRUNG_BINH
+The primary function of the respiratory system is to exchange oxygen from the air and remove carbon dioxide from the body.
+-
+Câu 3: What is the missing word for blank 3?
+Mouth
+Nose
+Ears
+-
+B
+TINH_TU
+TRUNG_BINH
+The air enters the body through the nose and travels down to the bronchioles and alveoli in the lungs.
+-
+Câu 4: What is the missing word for blank 4?
+Heart
+Liver
+Kidneys
+-
+B
+TINH_TU
+TRUNG_BINH
+The respiratory muscles, including the diaphragm and intercostal muscles, help to move air in and out of the lungs.
+-
+Câu 5: What are some examples of respiratory diseases mentioned in the paragraph?
+Asthma, chronic obstructive pulmonary disease (COPD), and lung cancer.
+Asthma, and lung cancer.
+-
+A
+TINH_TU
+TRUNG_BINH
+The paragraph states that respiratory diseases such as asthma, chronic obstructive pulmonary disease (COPD), and lung cancer can affect the functioning of the respiratory system and have serious consequences for overall health.
