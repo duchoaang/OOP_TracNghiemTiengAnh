@@ -12,6 +12,9 @@ public class User {
     private String ngaySinh;
     private Date ngayGiaNhap;
     private List<Diem> dsDiem;
+    private USER_ROLE role;
+
+
     {
         id = ++dem;
         setNgayGiaNhap(new Date());
@@ -26,6 +29,14 @@ public class User {
         this.setAddress(address);
         this.setGioiTinh(gioiTinh);
         this.ngaySinh = ngaySinh;
+        this.setRole(USER_ROLE.User);
+    }
+    public User(String name, String address, String gioiTinh, String ngaySinh, USER_ROLE role){
+        this.setName(name);
+        this.setAddress(address);
+        this.setGioiTinh(gioiTinh);
+        this.ngaySinh = ngaySinh;
+        this.setRole(role);
     }
 
     public static int getDem() {
@@ -115,5 +126,13 @@ public class User {
 
     public void setDsDiem(List<Diem> dsDiem) {
         this.dsDiem = dsDiem;
+    }
+
+    public USER_ROLE getRole() {
+        return role;
+    }
+
+    public void setRole(USER_ROLE role) {
+        this.role = role;
     }
 }
