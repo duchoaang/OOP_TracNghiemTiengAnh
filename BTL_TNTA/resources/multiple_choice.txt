@@ -14,7 +14,7 @@ Canberra
 Sydney
 Brisbane
 -
-B
+A
 DANH_TU
 DE
 The capital city of Australia is Canberra. The answer is A because it is not the correct capital city
@@ -24,7 +24,7 @@ Claude Monet
 Pablo Picasso
 Leonardo da Vinci
 -
-D
+A
 TINH_TU
 TRUNG_BINH
 Leonardo da Vinci painted the Mona Lisa. The answer is A because Vincent van Gogh did not paint the Mona Lisa.
@@ -34,7 +34,7 @@ CSS
 Java
 XML
 -
-C
+A
 DONG_TU
 KHO
 Java is a programming language. The answer is A because HTML is not a programming language.
@@ -44,7 +44,7 @@ Mars
 Jupiter
 Saturn
 -
-C
+A
 DANH_TU
 TRUNG_BINH
 Jupiter is the largest planet in our solar system. The answer is A because Venus is not the largest planet in our solar system.
@@ -64,7 +64,7 @@ Green
 Blue
 Yellow
 -
-D
+A
 TINH_TU
 TRUNG_BINH
 The primary colors are red, blue, and yellow. The answer is D because it is not one of the primary colors.
@@ -74,7 +74,7 @@ Whale
 Rhinoceros
 Giraffe
 -
-B
+A
 DANH_TU
 KHO
 The blue whale is the largest mammal in the world. The answer is A because elephants are not the largest mammal in the world.
@@ -94,7 +94,7 @@ Au
 Fe
 Pb
 -
-B
+A
 TINH_TU
 TRUNG_BINH
 The chemical symbol for gold is Au. The answer is A because Ag is the chemical symbol for silver.

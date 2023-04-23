@@ -7,7 +7,7 @@ Sun
 Mars
 Jupiter
 -
-B
+A
 DANH_TU
 DE
 The Earth is the third planet from the Sun.
@@ -18,7 +18,7 @@ Round
 Square
 Triangle
 -
-B
+A
 DANH_TU
 DE
 The Earth has a round shape.
@@ -51,7 +51,7 @@ Satellite
 Comet
 Star
 -
-B
+A
 DANH_TU
 DE
 The Moon is the Earth's natural satellite
@@ -73,7 +73,7 @@ Stomach
 Lungs
 Liver
 -
-B
+A
 DONG_TU
 KHO
 The heart is located in the chest, just behind the lungs.
@@ -103,7 +103,7 @@ Lungs
 Brain
 Kidneys
 -
-C
+A
 DONG_TU
 KHO
 The heart ensures that all the body's cells receive the nutrients and oxygen they need to function properly, including the kidneys.
@@ -125,7 +125,7 @@ Extract
 Transport
 Exchange
 -
-C
+A
 TINH_TU
 TRUNG_BINH
 The primary function of the respiratory system is to exchange oxygen from the air and remove carbon dioxide from the body.
@@ -135,7 +135,7 @@ Mouth
 Nose
 Ears
 -
-B
+A
 TINH_TU
 TRUNG_BINH
 The air enters the body through the nose and travels down to the bronchioles and alveoli in the lungs.
@@ -145,7 +145,7 @@ Heart
 Liver
 Kidneys
 -
-B
+A
 TINH_TU
 TRUNG_BINH
 The respiratory muscles, including the diaphragm and intercostal muscles, help to move air in and out of the lungs.

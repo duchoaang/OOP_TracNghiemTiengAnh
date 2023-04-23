@@ -72,6 +72,17 @@ public class User {
         System.out.println("Nhap ngay sinh moi: ");
         this.ngaySinh = CAUHINH.sc.nextLine();
     }
+    public void capNhapAdmin(){
+        System.out.println("Nhap quyền mới: (1.User / 2. Admin) ");
+        int temp = Integer.parseInt(CAUHINH.sc.nextLine());
+        if(temp == 1){
+            this.role = USER_ROLE.User;
+        }
+        if (temp==2) {
+            this.role = USER_ROLE.Admin;
+        }
+
+    }
     public int getId() {
         return id;
     }

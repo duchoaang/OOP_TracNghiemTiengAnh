@@ -169,8 +169,8 @@ public class main {
         boolean flag = true;
         while (flag) {
             System.out.println("=== Chọn quyền ===");
-            System.out.println(USER_ROLE.User.getName());
-            System.out.println(USER_ROLE.Admin);
+            System.out.println("1. " + USER_ROLE.User.getName());
+            System.out.println("2. " + USER_ROLE.Admin);
             permisstion = Integer.parseInt(CAUHINH.sc.nextLine());
             switch (permisstion) {
                 case 1:
@@ -352,9 +352,17 @@ public class main {
                     break;
 
                 case 2:
-                    System.out.println("Nhap id tai khoan cua ban: ");
-                    int tempPer = Integer.parseInt(CAUHINH.sc.nextLine());
-                    User userTemp = dsUser.timKiem(tempPer);
+                    int tempPer;
+                    User userTemp = null;
+                    do{
+                        System.out.println("Nhap id tai khoan cua ban: ");
+                        tempPer = Integer.parseInt(CAUHINH.sc.nextLine());
+                        userTemp = dsUser.timKiem(tempPer);
+                        if(userTemp.getRole().getId() == 1){
+                            System.out.println("id khong hop le");
+                        }
+                    }while (userTemp.getRole().getId() == 1);
+
                     boolean flagAdmin = true;
                     while (flagAdmin){
                         if (userTemp.getRole().getId() == 2) {
@@ -368,8 +376,8 @@ public class main {
                                             + "5.Xóa người dùng \n"
                                             + "6.Xem danh sách câu hỏi \n"
                                             + "7.Tìm câu hỏi \n"
-                                            + "8.Luyện tập \n"
-                                            + "9.Thống kê kết quả học tập\n"
+                                            + "8.Thống kê kết quả học tập\n"
+                                            + "9.Cập nhập quyền\n"
                                             + "0.Thoát chương trình\n"
 
                             );
@@ -532,13 +540,17 @@ public class main {
                                     }
                                     break;
                                 case 8:
-                                    System.out.println("=== Luyen tap ===");
-                                    luyenTap();
-                                    break;
-                                case 9:
                                     System.out.println("=== Thong ke === ");
                                     thongKe();
                                     break;
+                                case 9:
+                                    System.out.println("=== Cap nhap quyen ===");
+                                    System.out.println("Nhap id nguoi dung ma ban muon cap nhap: ");
+                                    int idUser = Integer.parseInt(CAUHINH.sc.nextLine());
+                                    dsUser.capNhapAdmin(idUser);
+                                    System.out.println("=== Cap nhap quyen nguoi dung thanh cong");
+                                    break;
+
                                 default:
                                     System.out.println("Tam biet");
                                     flagAdmin = false;
@@ -569,11 +581,11 @@ public class main {
 
 
     public static void thongKe() {
-        System.out.println("Nhap ma so cua ban: ");
+        System.out.println("Nhap ma so cua nguoi dung muon xem: ");
         int id = Integer.parseInt(CAUHINH.sc.nextLine());
         int temp = 0;
         double diemTong = 0;
-        if (dsUser.timKiem(id) != null) {
+        if (dsUser.timKiemTonTai(id) != null) {
             User user = dsUser.timKiem(id);
             System.out.printf("Ten nguoi dung: %s\n", user.getName());
             System.out.println("So lan kiem tra: " + user.getDsDiem().size());
@@ -587,6 +599,9 @@ public class main {
             String diemTrungBinhFormatted = CAUHINH.df.format(diemTrungBinh); // Định dạng số điểm với đối tượng DecimalFormat.
             System.out.println("Diem trung binh trong thang: " + diemTrungBinhFormatted);
 
+        }
+        else {
+            System.out.println("Ma khong hop le!");
         }
     }
 
@@ -610,176 +625,176 @@ public class main {
         }
     }
 
-    public static void luyenTap() {
-        System.out.println("Nhap ma so cua ban: ");
-        int id = Integer.parseInt(CAUHINH.sc.nextLine());
-        if (dsUser.timKiem(id) != null) {
-            Diem d = null;
-            User user = dsUser.timKiem(id);
-            System.out.println("=== Dang nhap thanh cong ===");
-            System.out.println("Cac dang cau hoi hien tai:\n1.Multiple choice\n2.Incomplete\n3.Conversation\n");
-            System.out.println("Ban chon: ");
-            int choices = Integer.parseInt(CAUHINH.sc.nextLine());
-            int temp = 0;
-            String your_choices;
-
-            if (choices == QUESTION_ROLE.Multiple_Choice.getId()) {
-                List<String> dsAns = new ArrayList<>();
-                List<Integer> dsId = new ArrayList<>();
-                int tempDiem = 0;
-                System.out.println("Ban muon bao nhieu cau:");
-                temp = Integer.parseInt(CAUHINH.sc.nextLine());
-                int temp2 = 0;
-                boolean flag = false;
-                List<Question> ds = dsCauHoi.luyenTapMultipleChoice();
-                for (Question q : ds) {
-                    for (int i = 0; i < dsNhungCauDaTraLoiMultipleChoice.size(); i++) {
-                        if (dsNhungCauDaTraLoiMultipleChoice.get(i) == q.getId()) {
-                            flag = true;
-                        }
-                    }
-                    if (flag == false) {
-                        q.hienThi();
-                        System.out.println("Nhap dap an:");
-                        your_choices = CAUHINH.sc.nextLine();
-                        your_choices = your_choices.toUpperCase();
-                        dsAns.add(your_choices);
-                        dsNhungCauDaTraLoiMultipleChoice.add(q.getId());
-                        if (q.checkDapAn(your_choices)) {
-                            ++tempDiem;
-                        }
-                        temp2++;
-                        if (temp2 == temp) {
-                            temp2 = 0;
-                            break;
-                        }
-                    }
-                    flag = false;
-
-                }
-                double diemTong = tempDiem * CAUHINH.SO_DIEM;
-                d = new Diem(diemTong, QUESTION_ROLE.Multiple_Choice, dsId);
-                DIEM_TONG += diemTong;
-                user.getDsDiem().add(d);
-                int check = 0;
-                int temp3 = 0;
-                for (Question u : ds) {
-                    u.hienThi();
-                    System.out.println("Dap an dung la: " + u.getAns().getTrue_answer());
-                    System.out.println("Dap an ban chon: " + dsAns.get(check));
-                    if (dsAns.get(check).equals(u.getAns().getTrue_answer())) {
-                        System.out.println("Ban lam dung!");
-                    } else {
-                        System.out.println("Ban lam sai!");
-                    }
-                    check++;
-                    temp3++;
-                    if (temp3 == temp) {
-                        break;
-                    }
-                }
-                System.out.println("So diem ban vua dat duoc la: " + diemTong);
-                System.out.println("So lan lam kiem tra: " + user.getDsDiem().size());
-
-            } else if (choices == QUESTION_ROLE.Incomplete.getId() || choices == QUESTION_ROLE.Conversation.getId()) {
-                int tempDiem = 0;
-                int chon1;
-                System.out.println("Chon muc do ban muon:\n1.De\n2.Trung binh\n3.Kho");
-                System.out.println("Ban chon: ");
-                chon1 = Integer.parseInt(CAUHINH.sc.nextLine());
-                if (choices == QUESTION_ROLE.Incomplete.getId()) {
-                    int tempDiem2 = 0;
-                    List<String> dsAns = new ArrayList<>();
-                    List<Integer> dsId = new ArrayList<>();
-                    List<Question> ds = dsCauHoi.luyenTap(QUESTION_ROLE.Incomplete.getId(), chon1);
-                    int check1 = 0;
-
-                    for (Question q : ds) {
-                        if (check1 == 0) {
-                            q.hienThiContext();
-                            check1++;
-                        } else {
-                            dsId.add(q.getId());
-                            q.hienThi();
-                            System.out.println("Nhap dap an:");
-                            your_choices = CAUHINH.sc.nextLine();
-                            your_choices = your_choices.toUpperCase();
-                            dsAns.add(your_choices);
-                            if (q.checkDapAn(your_choices)) {
-                                ++tempDiem2;
-                            }
-                        }
-                    }
-                    double diemTong = tempDiem2 * CAUHINH.SO_DIEM;
-                    d = new Diem(diemTong, QUESTION_ROLE.Incomplete, dsId);
-                    DIEM_TONG += diemTong;
-                    user.getDsDiem().add(d);
-                    int check = 0;
-                    int check2 = 0;
-                    for (Question u : ds) {
-                        if (check2 == 0) {
-                            check2++;
-                            continue;
-                        } else {
-                            u.hienThi();
-                            System.out.println("Dap an dung la: " + u.getAns().getTrue_answer());
-                            System.out.println("Dap an ban chon: " + dsAns.get(check));
-                            check++;
-                        }
-                    }
-                    System.out.println("So diem ban vua dat duoc la: " + diemTong);
-                } else if (choices == QUESTION_ROLE.Conversation.getId()) {
-
-                    int tempDiem2 = 0;
-                    List<String> dsAns = new ArrayList<>();
-                    List<Integer> dsId = new ArrayList<>();
-                    List<Question> ds = dsCauHoi.luyenTap(QUESTION_ROLE.Conversation.getId(), chon1);
-                    int check1 = 0;
-
-                    for (Question q : ds) {
-                        if (check1 == 0) {
-                            q.hienThiContext();
-                            check1++;
-                        } else {
-                            dsId.add(q.getId());
-                            q.hienThi();
-                            System.out.println("Nhap dap an:");
-                            your_choices = CAUHINH.sc.nextLine();
-                            your_choices = your_choices.toUpperCase();
-                            dsAns.add(your_choices);
-                            if (q.checkDapAn(your_choices)) {
-                                ++tempDiem2;
-                            }
-                        }
-                    }
-                    double diemTong = tempDiem2 * CAUHINH.SO_DIEM;
-                    d = new Diem(diemTong, QUESTION_ROLE.Conversation, dsId);
-                    DIEM_TONG += diemTong;
-                    user.getDsDiem().add(d);
-                    int check = 0;
-                    int check2 = 0;
-                    for (Question u : ds) {
-                        if (check2 == 0) {
-                            check2++;
-                            continue;
-                        } else {
-                            u.hienThi();
-                            System.out.println("Dap an dung la: " + u.getAns().getTrue_answer());
-                            System.out.println("Dap an ban chon: " + dsAns.get(check));
-                            check++;
-                        }
-                    }
-                    System.out.println("So diem ban vua dat duoc la: " + diemTong);
-
-                }
-            } else {
-                System.out.println("Khong co dang cau hoi phu hop!");
-            }
-        } else {
-            System.out.println("Ma so khong ton tai!");
-        }
-
-    }
+//    public static void luyenTap() {
+//        System.out.println("Nhap ma so cua nguoi dung muon xem : ");
+//        int id = Integer.parseInt(CAUHINH.sc.nextLine());
+//        if (dsUser.timKiem(id) != null) {
+//            Diem d = null;
+//            User user = dsUser.timKiem(id);
+//            System.out.println("=== Dang nhap thanh cong ===");
+//            System.out.println("Cac dang cau hoi hien tai:\n1.Multiple choice\n2.Incomplete\n3.Conversation\n");
+//            System.out.println("Ban chon: ");
+//            int choices = Integer.parseInt(CAUHINH.sc.nextLine());
+//            int temp = 0;
+//            String your_choices;
+//
+//            if (choices == QUESTION_ROLE.Multiple_Choice.getId()) {
+//                List<String> dsAns = new ArrayList<>();
+//                List<Integer> dsId = new ArrayList<>();
+//                int tempDiem = 0;
+//                System.out.println("Ban muon bao nhieu cau:");
+//                temp = Integer.parseInt(CAUHINH.sc.nextLine());
+//                int temp2 = 0;
+//                boolean flag = false;
+//                List<Question> ds = dsCauHoi.luyenTapMultipleChoice();
+//                for (Question q : ds) {
+//                    for (int i = 0; i < dsNhungCauDaTraLoiMultipleChoice.size(); i++) {
+//                        if (dsNhungCauDaTraLoiMultipleChoice.get(i) == q.getId()) {
+//                            flag = true;
+//                        }
+//                    }
+//                    if (flag == false) {
+//                        q.hienThi();
+//                        System.out.println("Nhap dap an:");
+//                        your_choices = CAUHINH.sc.nextLine();
+//                        your_choices = your_choices.toUpperCase();
+//                        dsAns.add(your_choices);
+//                        dsNhungCauDaTraLoiMultipleChoice.add(q.getId());
+//                        if (q.checkDapAn(your_choices)) {
+//                            ++tempDiem;
+//                        }
+//                        temp2++;
+//                        if (temp2 == temp) {
+//                            temp2 = 0;
+//                            break;
+//                        }
+//                    }
+//                    flag = false;
+//
+//                }
+//                double diemTong = tempDiem * CAUHINH.SO_DIEM;
+//                d = new Diem(diemTong, QUESTION_ROLE.Multiple_Choice, dsId);
+//                DIEM_TONG += diemTong;
+//                user.getDsDiem().add(d);
+//                int check = 0;
+//                int temp3 = 0;
+//                for (Question u : ds) {
+//                    u.hienThi();
+//                    System.out.println("Dap an dung la: " + u.getAns().getTrue_answer());
+//                    System.out.println("Dap an ban chon: " + dsAns.get(check));
+//                    if (dsAns.get(check).equals(u.getAns().getTrue_answer())) {
+//                        System.out.println("Ban lam dung!");
+//                    } else {
+//                        System.out.println("Ban lam sai!");
+//                    }
+//                    check++;
+//                    temp3++;
+//                    if (temp3 == temp) {
+//                        break;
+//                    }
+//                }
+//                System.out.println("So diem ban vua dat duoc la: " + diemTong);
+//                System.out.println("So lan lam kiem tra: " + user.getDsDiem().size());
+//
+//            } else if (choices == QUESTION_ROLE.Incomplete.getId() || choices == QUESTION_ROLE.Conversation.getId()) {
+//                int tempDiem = 0;
+//                int chon1;
+//                System.out.println("Chon muc do ban muon:\n1.De\n2.Trung binh\n3.Kho");
+//                System.out.println("Ban chon: ");
+//                chon1 = Integer.parseInt(CAUHINH.sc.nextLine());
+//                if (choices == QUESTION_ROLE.Incomplete.getId()) {
+//                    int tempDiem2 = 0;
+//                    List<String> dsAns = new ArrayList<>();
+//                    List<Integer> dsId = new ArrayList<>();
+//                    List<Question> ds = dsCauHoi.luyenTap(QUESTION_ROLE.Incomplete.getId(), chon1);
+//                    int check1 = 0;
+//
+//                    for (Question q : ds) {
+//                        if (check1 == 0) {
+//                            q.hienThiContext();
+//                            check1++;
+//                        } else {
+//                            dsId.add(q.getId());
+//                            q.hienThi();
+//                            System.out.println("Nhap dap an:");
+//                            your_choices = CAUHINH.sc.nextLine();
+//                            your_choices = your_choices.toUpperCase();
+//                            dsAns.add(your_choices);
+//                            if (q.checkDapAn(your_choices)) {
+//                                ++tempDiem2;
+//                            }
+//                        }
+//                    }
+//                    double diemTong = tempDiem2 * CAUHINH.SO_DIEM;
+//                    d = new Diem(diemTong, QUESTION_ROLE.Incomplete, dsId);
+//                    DIEM_TONG += diemTong;
+//                    user.getDsDiem().add(d);
+//                    int check = 0;
+//                    int check2 = 0;
+//                    for (Question u : ds) {
+//                        if (check2 == 0) {
+//                            check2++;
+//                            continue;
+//                        } else {
+//                            u.hienThi();
+//                            System.out.println("Dap an dung la: " + u.getAns().getTrue_answer());
+//                            System.out.println("Dap an ban chon: " + dsAns.get(check));
+//                            check++;
+//                        }
+//                    }
+//                    System.out.println("So diem ban vua dat duoc la: " + diemTong);
+//                } else if (choices == QUESTION_ROLE.Conversation.getId()) {
+//
+//                    int tempDiem2 = 0;
+//                    List<String> dsAns = new ArrayList<>();
+//                    List<Integer> dsId = new ArrayList<>();
+//                    List<Question> ds = dsCauHoi.luyenTap(QUESTION_ROLE.Conversation.getId(), chon1);
+//                    int check1 = 0;
+//
+//                    for (Question q : ds) {
+//                        if (check1 == 0) {
+//                            q.hienThiContext();
+//                            check1++;
+//                        } else {
+//                            dsId.add(q.getId());
+//                            q.hienThi();
+//                            System.out.println("Nhap dap an:");
+//                            your_choices = CAUHINH.sc.nextLine();
+//                            your_choices = your_choices.toUpperCase();
+//                            dsAns.add(your_choices);
+//                            if (q.checkDapAn(your_choices)) {
+//                                ++tempDiem2;
+//                            }
+//                        }
+//                    }
+//                    double diemTong = tempDiem2 * CAUHINH.SO_DIEM;
+//                    d = new Diem(diemTong, QUESTION_ROLE.Conversation, dsId);
+//                    DIEM_TONG += diemTong;
+//                    user.getDsDiem().add(d);
+//                    int check = 0;
+//                    int check2 = 0;
+//                    for (Question u : ds) {
+//                        if (check2 == 0) {
+//                            check2++;
+//                            continue;
+//                        } else {
+//                            u.hienThi();
+//                            System.out.println("Dap an dung la: " + u.getAns().getTrue_answer());
+//                            System.out.println("Dap an ban chon: " + dsAns.get(check));
+//                            check++;
+//                        }
+//                    }
+//                    System.out.println("So diem ban vua dat duoc la: " + diemTong);
+//
+//                }
+//            } else {
+//                System.out.println("Khong co dang cau hoi phu hop!");
+//            }
+//        } else {
+//            System.out.println("Ma so khong ton tai!");
+//        }
+//
+//    }
 
     public static void luyenTapUser(int id) {
 

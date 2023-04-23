@@ -46,4 +46,11 @@ public class UserManager {
             }
         }
     }
+    public void capNhapAdmin(int id){
+        for(User u : ds){
+            if(u.getId() == id){
+                u.capNhapAdmin();
+            }
+        }
+    }
 }

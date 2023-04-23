@@ -7,17 +7,17 @@ At an art fair
 Online
 At a garage sale
 -
-C
+A
 DONG_TU
 DE
 At an art fair
 Câu 2 : What is the subject of the painting?
-A cityscape
-A beach scene
-A mountain range
-A portrait
+cityscape
+beach scene
+mountain range
+portrait
 -
-C
+A
 DONG_TU
 DE
 A beach scene
@@ -27,7 +27,7 @@ The homeowner
 A local artist
 The homeowner's friend
 -
-C
+A
 DONG_TU
 DE
  The friend mentions that the painting was created by a local artist. Therefore, the correct answer is
@@ -37,7 +37,7 @@ Last month
 Last year
 A few years ago
 -
-C
+A
 DONG_TU
 DE
 The friend tells the person that he bought the painting at an art fair last year. Therefore, the correct answer
@@ -47,7 +47,7 @@ They are co-workers
 They are classmates
 They are friends
 -
-C
+A
 DONG_TU
 DE
 The reading passage describes the person visiting their "friend's" house.
@@ -60,7 +60,7 @@ Spain, Portugal, and Greece
 France, Italy, and Spain
 The reading passage does not provide enough information to answer this question.
 -
-C
+A
 DONG_TU
 TRUNG_BINH
 The reading passage describes the person visiting their "friend's" house.
@@ -70,7 +70,7 @@ Hostels
 Airbnb rentals
 The reading passage does not provide enough information to answer this question.
 -
-C
+A
 DONG_TU
 TRUNG_BINH
 The reading passage states that Maggie "stayed in youth hostels" during her trip to Europe
@@ -80,7 +80,7 @@ Only other college students
 Only other American travelers
 Only other American travelers
 -
-C
+A
 DONG_TU
 TRUNG_BINH
 The reading passage states that Maggie "met many other travelers from around the world" during her trip to Europe. Therefore, the correct answer is d) Other travelers from around the world
@@ -90,7 +90,7 @@ Trying new foods
 Shopping for souvenirs
 The reading passage does not provide enough information to answer this question.
 -
-C
+A
 DONG_TU
 TRUNG_BINH
 The friend tells the person that he bought the painting at an art fair last year. Therefore, the correct answer
@@ -99,7 +99,7 @@ Yes, she had a great time
 No, she had a terrible time
 The reading passage does not provide enough information to answer this question.
 -
-C
+A
 DONG_TU
 TRUNG_BINH
 The reading passage describes the person visiting their "friend's" house!
@@ -112,7 +112,7 @@ Becoming a nurse or a doctor
 Becoming a chef or a fashion designer
 The reading passage does not provide enough information to answer this question.
 -
-C
+A
 TINH_TU
 KHO
 The reading passage describes the person visiting their "friend's" house.
@@ -122,7 +122,7 @@ Making a lot of money
 Working in a prestigious profession
 The reading passage does not provide enough information to answer this question.
 -
-C
+A
 TINH_TU
 KHO
 The reading passage explicitly states that Samantha has narrowed down her career options to two: becoming a nurse or becoming a doctor
@@ -132,7 +132,7 @@ Medicine
 Both require the same level of education
 The reading passage does not provide enough information to answer this question.
 -
-C
+A
 TINH_TU
 KHO
 The reading passage states that Maggie "met many other travelers from around the world" during her trip to Europe. Therefore, the correct answer is d) Other travelers from around the world
@@ -142,7 +142,7 @@ High school student
 Medical school studen
 The reading passage does not provide enough information to answer this question.
 -
-C
+A
 TINH_TU
 KHO
 The friend tells the person that he bought the painting at an art fair last year. Therefore, the correct answer
@@ -151,7 +151,7 @@ Nurse
 Doctor
 The reading passage does not provide enough information to answer this question.
 -
-C
+A
 TINH_TU
 KHO
 The reading passage describes the person visiting their "friend's" house!
