@@ -1,0 +1,157 @@
+You are visiting a friend and notice that his house is decorated very nicely. On the wall in the living room, you see a beautiful painting of a beach scene. You ask your friend where he got the painting and he tells you that he bought it at an art fair last year. He also mentions that the painting was created by a local artist.
+DE
+DONG_TU
+Câu 1 : Where did the person buy the painting?
+At a furniture store
+At an art fair
+Online
+At a garage sale
+-
+A
+DONG_TU
+DE
+At an art fair
+Câu 2 : What is the subject of the painting?
+cityscape
+beach scene
+mountain range
+portrait
+-
+A
+DONG_TU
+DE
+A beach scene
+Câu 3 : Who created the painting?
+A famous artist
+The homeowner
+A local artist
+The homeowner's friend
+-
+A
+DONG_TU
+DE
+ The friend mentions that the painting was created by a local artist. Therefore, the correct answer is
+Câu 4: When did the person buy the painting?
+Last week
+Last month
+Last year
+A few years ago
+-
+A
+DONG_TU
+DE
+The friend tells the person that he bought the painting at an art fair last year. Therefore, the correct answer
+Câu 5: What is the person's relationship to the friend whose house they are visiting?
+They are siblings
+They are co-workers
+They are classmates
+They are friends
+-
+A
+DONG_TU
+DE
+The reading passage describes the person visiting their "friend's" house.
+Maggie is a college student who has just returned from a summer trip to Europe. While in Europe, she visited several countries, including France, Italy, and Spain. During her trip, she stayed in youth hostels and met many other travelers from around the world. Maggie had a great time and enjoyed experiencing new cultures and trying new foods.
+TRUNG_BINH
+DONG_TU
+Câu 1 : Which countries did Maggie visit during her trip to Europe?
+France, Italy, and Germany
+Spain, Portugal, and Greece
+France, Italy, and Spain
+The reading passage does not provide enough information to answer this question.
+-
+A
+DONG_TU
+TRUNG_BINH
+The reading passage describes the person visiting their "friend's" house.
+Câu 2 : Where did Maggie stay during her trip to Europe?
+Hotels
+Hostels
+Airbnb rentals
+The reading passage does not provide enough information to answer this question.
+-
+A
+DONG_TU
+TRUNG_BINH
+The reading passage states that Maggie "stayed in youth hostels" during her trip to Europe
+Câu 3 : Who did Maggie meet during her trip to Europe?
+Only locals from the countries she visited
+Only other college students
+Only other American travelers
+Only other American travelers
+-
+A
+DONG_TU
+TRUNG_BINH
+The reading passage states that Maggie "met many other travelers from around the world" during her trip to Europe. Therefore, the correct answer is d) Other travelers from around the world
+Câu 4: What did Maggie enjoy doing during her trip to Europe?
+Visiting museums
+Trying new foods
+Shopping for souvenirs
+The reading passage does not provide enough information to answer this question.
+-
+A
+DONG_TU
+TRUNG_BINH
+The friend tells the person that he bought the painting at an art fair last year. Therefore, the correct answer
+Câu 5: Was Maggie's trip to Europe successful?
+Yes, she had a great time
+No, she had a terrible time
+The reading passage does not provide enough information to answer this question.
+-
+A
+DONG_TU
+TRUNG_BINH
+The reading passage describes the person visiting their "friend's" house!
+Samantha is a high school student who is interested in pursuing a career in medicine. She has been doing some research on different medical professions and has narrowed down her options to two: becoming a nurse or becoming a doctor. Samantha has always loved science and helping others, but she is not sure which path would be the best fit for her.
+KHO
+TINH_TU
+Câu 1 : What career options is Samantha considering?
+Becoming a teacher or a lawyer
+Becoming a nurse or a doctor
+Becoming a chef or a fashion designer
+The reading passage does not provide enough information to answer this question.
+-
+A
+TINH_TU
+KHO
+The reading passage describes the person visiting their "friend's" house.
+Câu 2 : What interests Samantha about pursuing a career in medicine?
+Helping others
+Making a lot of money
+Working in a prestigious profession
+The reading passage does not provide enough information to answer this question.
+-
+A
+TINH_TU
+KHO
+The reading passage explicitly states that Samantha has narrowed down her career options to two: becoming a nurse or becoming a doctor
+Câu 3 : Which profession requires a higher level of education: nursing or medicine?
+Nursing
+Medicine
+Both require the same level of education
+The reading passage does not provide enough information to answer this question.
+-
+A
+TINH_TU
+KHO
+The reading passage states that Maggie "met many other travelers from around the world" during her trip to Europe. Therefore, the correct answer is d) Other travelers from around the world
+Câu 4: What is Samantha's current level of education?
+College student
+High school student
+Medical school studen
+The reading passage does not provide enough information to answer this question.
+-
+A
+TINH_TU
+KHO
+The friend tells the person that he bought the painting at an art fair last year. Therefore, the correct answer
+Câu 5: Which medical profession does Samantha ultimately decide to pursue?
+Nurse
+Doctor
+The reading passage does not provide enough information to answer this question.
+-
+A
+TINH_TU
+KHO
+The reading passage describes the person visiting their "friend's" house!

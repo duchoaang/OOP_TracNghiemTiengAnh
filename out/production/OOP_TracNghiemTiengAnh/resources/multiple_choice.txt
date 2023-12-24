@@ -1,0 +1,100 @@
+Câu 1: Which of the following is NOT one of the four fundamental forces of nature?
+Gravitational force
+Strong nuclear force
+Weak nuclear force
+Electromagnetic force
+-
+A
+DANH_TU
+DE
+The answer is D because it is not one of the four fundamental forces of nature.
+Câu 2: What is the capital city of Australia?
+Melbourne
+Canberra
+Sydney
+Brisbane
+-
+A
+DANH_TU
+DE
+The capital city of Australia is Canberra. The answer is A because it is not the correct capital city
+Câu 3: Who painted the Mona Lisa?
+Vincent van Gogh
+Claude Monet
+Pablo Picasso
+Leonardo da Vinci
+-
+A
+TINH_TU
+TRUNG_BINH
+Leonardo da Vinci painted the Mona Lisa. The answer is A because Vincent van Gogh did not paint the Mona Lisa.
+Câu 4: Which of the following is a programming language?
+HTML
+CSS
+Java
+XML
+-
+A
+DONG_TU
+KHO
+Java is a programming language. The answer is A because HTML is not a programming language.
+Câu 5: What is the largest planet in our solar system?
+Venus
+Mars
+Jupiter
+Saturn
+-
+A
+DANH_TU
+TRUNG_BINH
+Jupiter is the largest planet in our solar system. The answer is A because Venus is not the largest planet in our solar system.
+Câu 6: What is the highest mountain in the world?
+Mount Everest
+Mount Kilimanjaro
+Mount Fuji
+Mount McKinley
+-
+A
+DONG_TU
+DE
+Mount Everest is the highest mountain in the world. The answer is B because Mount Kilimanjaro is not the highest mountain in the world.
+Câu 7: Which of the following is NOT a primary color?
+Red
+Green
+Blue
+Yellow
+-
+A
+TINH_TU
+TRUNG_BINH
+The primary colors are red, blue, and yellow. The answer is D because it is not one of the primary colors.
+Câu 8: Which of the following is the largest mammal in the world?
+Elephant
+Whale
+Rhinoceros
+Giraffe
+-
+A
+DANH_TU
+KHO
+The blue whale is the largest mammal in the world. The answer is A because elephants are not the largest mammal in the world.
+Câu 9: Who is the author of the Harry Potter series?
+J.K. Rowling
+Stephen King
+Dan Brown
+George R.R. Martin
+-
+A
+DONG_TU
+DE
+J.K. Rowling is the author of the Harry Potter series. The answer is B because Stephen King did not write the Harry Potter series.
+CâU 10: What is the chemical symbol for gold?
+Ag
+Au
+Fe
+Pb
+-
+A
+TINH_TU
+TRUNG_BINH
+The chemical symbol for gold is Au. The answer is A because Ag is the chemical symbol for silver.
